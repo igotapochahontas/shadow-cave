@@ -1,7 +1,7 @@
 # shadow cave
-Virtual reality game to host tabletop RPG'S.  With AI! 
+Virtual reality platform to host tabletop RPG'S.  With AI! 
 
-A description of the game and how it's built can be found here:
+A description of the platform and how it's built can be found here:
 https://youtu.be/
 
 A basic video explanation and walkthrough can be found at 
