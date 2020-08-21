@@ -1,40 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Pitch Game</title>
-    <meta name="description" content="play for pay">
-    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
-    <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
-    <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
-    <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
-    <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
-    <script src="components/set-image.js"></script>
-  </head>
-  <body>
-    <a-scene>
-      <a-assets>
-           
-            <img id="sky1" crossorigin="anonymous" src="../assets/sky.jpg">
-            
-            <img id="gate1" crossorigin="anonymous" src="../assets/gatedesc.png">
-           
-          
-      </a-assets>
-      <a-sky src="#sky1"></a-sky>
-      <a-cone src="#gate1" height="1" radius-top="0.2" position="1 0.5 -4" onClick="location.href='/greet.html'"></a-cone>
-      <!-- Camera + cursor. -->
-      <a-plane src="../assets/floor2.jpg" rotation="-90 0 0" height="100" width="100"></a-plane>
-      <a-entity>
-       <a-camera position= "0 1.8 30">
-          <a-entity cursor
-          position="0 0 -1"
-          geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
-          material="color: #32CD32; shader: flat">
+	<head>
+		<meta charset=utf-8>
+		<title>Early Earth</title>
+		<style>
+			body { margin: 0; }
+			canvas { width: 100%; height: 100% }
+		</style>
+	</head>
+	<body>
+<script src="file:///android_asset/app.js"></script>
+<!--
+dependencies above and below can be uncommented
+for local android installation
+<script src="../three.js-master/build/three.min.js"></script>
+<script src="../three.js-master/examples/js/exporters/OBJExporter.js"></script>
 
-       </a-entity>
-       </a-camera>
-    </a-entity>
-    </a-scene>
-  </body>
+<script src="../three.js-master/examples/js/controls/OrbitControls.js"></script>
+<script src="../three.js-master/examples/js/Detector.js"></script>
+<script src="../three.js-master/examples/js/libs/dat.gui.min.js"></script>
+-->
+<script src="depends/three.min.js"></script>
+<script src="depends/OBJExporter.js"></script>
+
+<script src="depends/OrbitControls.js"></script>
+<script src="depends/Detector.js"></script>
+<script src="depends/dat.gui.min.js"></script>
+
+<script src="export1.js"></script>
+
+	</body>
 </html>
